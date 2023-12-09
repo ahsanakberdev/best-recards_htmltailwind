@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Regards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body class="font-Monsterrat">
+
+    <!-- HEADER -->
+
+    <header class="sticky w-full top-0 xl:py-9 md:py-5 py-3">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html">
+                      <img src="../src/img/logo.svg" class="xl:w-auto w-[185px]" alt="">
+                    </a>
+                </div>
+                <div class="menu-trigger lg:hidden block cursor-pointer" onclick="openMenu()">
+                    <img src="../src/img/menu-trigger.svg" width="40px" alt="">
+                </div>
+                <div class="navigations-items lg:static fixed lg:opacity-100 opacity-0 lg:visible invisible text-center lg:h-auto h-screen lg:overflow-visible overflow-hidden lg:bg-transparent bg-white mobile-navigation top-0 lg:z-auto -left-96 lg:w-auto w-full bottom-0 transition-all duration-500 ease-in-out lg:block flex justify-center items-center" id="mobileNav"">
+                    <ul class="flex lg:flex-row flex-col justify-between">
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Wenskaarten</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Momenten</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Voordeel mixboxen</a></li>
+                        <li class="lg:mb-0 mb-3 lg:py-4"><a href="">Molens</a></li>
+                    </ul>
+                    <div class="lg:hidden block cancel absolute right-4 top-4 cursor-pointer" onclick="openMenu()">
+                        <img src="../src/img/cancel.svg" class="w-8" alt="">
+                    </div>
+                </div>
+                <div class="cart lg:block hidden">
+                    <button class="inline-block lg:w-16 w-12 lg:h-14 h-10 bg-lightblue rounded-2xl after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-admin after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5">
+                        
+                    </button>
+                    <button class="inline-block lg:w-16 w-12 lg:h-14 h-10 bg-lightblue rounded-2xl after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-cart after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5">
+                        
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <!-- BREADCRUMB -->
+    <div class="container">
+        <div class="flex items-center xl:pl-14 pl-0">
+            <a href="index.html">
+                <img src="../src/img/house-solid.svg" class="xl:w-auto w-5" alt="">
+            </a>
+            <div class="xl:px-8 lg:px-6 px-4">
+                <img src="../src/img/chevron-down-regular.svg" alt="">
+            </div>
+            <h4>
+                <a href="" class="2xl:text-3xl xl:text-2xl text-xl text-primary4">Wenskaarten</a>
+            </h4>
+            <div class="xl:px-8 lg:px-8 px-4">
+                <img src="../src/img/chevron-down-regular.svg" alt="">
+            </div>
+            <h4>
+                <a href="" class="2xl:text-3xl xl:text-2xl text-xl text-primary4">Jij bent jarig</a>
+            </h4>
+        </div>
+    </div>
+    <!-- BREADCRUMB -->
+
+    <!-- Product detail-->
+
+    <section class="relative">
+        <div class="container">
+            <div class="flex lg:flex-nowrap items-center flex-wrap">
+                <div class="lg:w-2/4 w-full">
+                    <div>
+                        <img src="../src/img/detail-img.png" alt="">
+                    </div>
+                </div>
+                <div class="lg:w-2/4 w-full 2xl:pl-28 xl:pl-24 lg:pl-16 pl-0">
+                    <div>
+                        <h2 class="section-heading !text-primary4">Jij bent jarig</h2>
+                        <span class="block lg:text-lg text-base text-[#222222] font-medium lg:pt-6 pt-3">Budgetkaart - vak 2b - ART20230808</span>
+                        <div>
+                            <label class="block lg:text-lg text-base text-[#222222] font-medium lg:pt-6 pt-3 pb-1.5">Aantal stuk:</label>
+                            <input type="text" class="w-40 border border-primary4 lg:text-[22px] font-semibold text-primary4 rounded-2xl lg:py-5 py-3 xl:indent-5 indent-3" name="" id="" value="1">
+                        </div>
+                        <span class="block lg:text-lg text-base text-primary4 font-medium lg:pt-5 pt-3 lg:pb-4 pb-3">Verwachte leverdatum: 26 mei 2023</span>
+                        <div class="actions">
+                            <a href="" class="btn 2xl:!text-2xl !text-base detail-btn1 xl:mr-5 hover:bg-transparent hover:text-primary4 border border-primary4 transition-all ease-linear duration-300 mr-2 !pl-14 bg-primary4 text-white relative after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-7 after:-translate-x-2/4 after:bg-100% after:bg-no-repeat after:h-3/5 xl:after:w-9 after:w-7">In winkelwagen</a>
+                            <a href="" class="btn 2xl:!text-2xl sm:mt-0 mt-4 !text-base detail-btn2 !pl-14 bg-lightblue text-white relative after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-7 after:-translate-x-2/4 after:bg-100% after:bg-no-repeat after:h-3/5 xl:after:w-9 after:w-7">In winkelwagen</a>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <img src="../src/img/detail-card.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="../src/img/detail-card.svg" alt="">
+                            </div>
+                            <div>
+                                <img src="../src/img/detail-card.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- WAVE LAYER -->
+            <div class="absolute -z-10 lg:-bottom-4 bottom-[55%] left-0 right-0">
+                <img src="../src/img/banner-bottomlayer.svg" class="w-full" alt="">
+            </div>
+            <!-- WAVE LAYER -->
+        </div>
+    </section>
+
+    <!-- Product detail -->
+
+    <!-- MAYBE NICE -->
+
+    <section class="xl:pt-24 lg:pt-20 pt-16">
+        <div class="container">
+            <h2 class="section-heading text-center !text-primary4">Misschien ook leuk</h2>
+            <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 2xl:gap-10 md:gap-7 gap-3 xl:pt-16 lg:pt-12 pt-8">
+                <div>
+                    <div class="relative list-items">
+                        <img src="../src/img/product-1.png" alt="" class="sm:w-auto w-full">
+                        <div class="hover-items">
+                        </div>
+                        <div class="carts">
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-lightblue rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-heart after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-primary4 rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-cartitem after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center xl:pt-4 pt-3">
+                        <div>
+                            <span class="lg:text-lg text-base font-semibold text-primary4">Jij bent jarig</span>
+                            <span class="lg:text-base text-sm text-primary4 block">Budgetkaart - vak 2b</span>
+                        </div>
+                        <div>
+                            <span class="lg:text-base text-sm font-medium text-primary4">€ 0,29</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative list-items">
+                        <img src="../src/img/product-1.png" alt="" class="sm:w-auto w-full">
+                        <div class="hover-items">
+                        </div>
+                        <div class="carts">
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-lightblue rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-heart after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-primary4 rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-cartitem after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center xl:pt-4 pt-3">
+                        <div>
+                            <span class="lg:text-lg text-base font-semibold text-primary4">Jij bent jarig</span>
+                            <span class="lg:text-base text-sm text-primary4 block">Budgetkaart - vak 2b</span>
+                        </div>
+                        <div>
+                            <span class="lg:text-base text-sm font-medium text-primary4">€ 0,29</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative list-items">
+                        <img src="../src/img/product-1.png" alt="" class="sm:w-auto w-full">
+                        <div class="hover-items">
+                        </div>
+                        <div class="carts">
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-lightblue rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-heart after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-primary4 rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-cartitem after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center xl:pt-4 pt-3">
+                        <div>
+                            <span class="lg:text-lg text-base font-semibold text-primary4">Jij bent jarig</span>
+                            <span class="lg:text-base text-sm text-primary4 block">Budgetkaart - vak 2b</span>
+                        </div>
+                        <div>
+                            <span class="lg:text-base text-sm font-medium text-primary4">€ 0,29</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative list-items">
+                        <img src="../src/img/product-1.png" alt="" class="sm:w-auto w-full">
+                        <div class="hover-items">
+                        </div>
+                        <div class="carts">
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-lightblue rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-heart after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                            <button class="inline-block lg:w-14 w-8 lg:h-14 h-8 bg-primary4 rounded-full after:content-[''] after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 relative after:bg-cartitem after:bg-100% after:bg-no-repeat after:h-3/5 after:w-3/5"></button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center xl:pt-4 pt-3">
+                        <div>
+                            <span class="lg:text-lg text-base font-semibold text-primary4">Jij bent jarig</span>
+                            <span class="lg:text-base text-sm text-primary4 block">Budgetkaart - vak 2b</span>
+                        </div>
+                        <div>
+                            <span class="lg:text-base text-sm font-medium text-primary4">€ 0,29</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDS -->
+
+    <section class="cards 2xl:pt-36 xl:pt-24 lg:pt-16 pt-8">
+        <h2 class="section-heading text-center !text-primary4">Ons assortiment</h2>
+        <div class="container">
+            <div class="grid xl:pt-16 lg:pt-12 pt-8 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-6 md:gap-4 gap-3">
+                <div class="bg-gradient-to-r opacity-back from-lightblue2 to-lightblue">
+                    <div>
+                        <img src="../src/img/birthday-card.svg" class="mx-auto" alt="">
+                    </div>
+                    <h4 class="text-primary2">Wenskaarten</h4>
+                </div>
+                <div class="bg-gradient-to-r xl:mt-12 opacity-back from-secondary2 to-secondary">
+                    <div>
+                        <img src="../src/img/birthday-card.svg" class="mx-auto" alt="">
+                    </div>
+                    <h4 class="text-reded">Voordeel mixboxen</h4>
+                </div>
+                <div class="bg-grey rounded-2xl xl:mt-24 opacity-back">
+                    <div>
+                        <img src="../src/img/birthday-card.svg" class="mx-auto" alt="">
+                    </div>
+                    <h4 class="text-dark2">Complete molens</h4>
+                </div>
+                <div class="bg-gradient-to-r xl:mt-12 opacity-back from-lightblue2 to-lightblue">
+                    <div>
+                        <img src="../src/img/birthday-card.svg" class="mx-auto" alt="">
+                    </div>
+                    <h4 class="text-dark3">Accessoires</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDS -->
+
+    <!-- SAMPLE BOX -->
+
+    <section class="bg-registerBg bg-cover bg-center bg-no-repeat h-[800px] w-full flex items-center 2xl:mt-44 xl:mt-32 lg:mt-24 mt-16">
+        <div class="container">
+            <div class="flex items-center lg:flex-nowrap flex-wrap">
+                <div class="lg:w-2/4 w-full lg:after:block after:hidden after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 relative after:bg-lineDots after:w-0.5 xl:pr-36 lg:pr-24 pr-0">
+                    <div class="text-center">
+                        <div class="relative">
+                            <h2 class="section-heading 2xl:!text-Mfont lg:!text-4xl flex-1 text-center">Sample box <br> ontvangen?</h2>
+                            <div class="absolute top-0 lg:right-0 right-7">
+                                <img src="../src/img/message-box.svg" class="2xl:w-auto lg:w-20 w-14" alt="">
+                            </div>
+                        </div>
+                        <p class="lg:pt-6 pt-4 lg:pb-4 pb-3 text-primary3">Curabitur malesuada ullamcorper augue, <br> nec rhoncus elit elementum </p>
+                        <div class="form-group flex 2xl:flex-row flex-col justify-between">
+                            <input type="text" id="" placeholder="Uw e-mailadres..." class="lg:py-5 flex-1 lg:mr-5 mr-0 md:py-4 py-3 lg:px-7 px-5 placeholder:text-primary3 border rounded-2xl border-[#416F8A] lg:text-xl text-base font-semibold text-primary3">
+                            <a href="" class="btn lg:py-5 w-fit 2xl:mt-0 mt-3 bg-lightblue text-white">
+                                Inschrijven
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/4 w-full 2xl:pl-36 lg:pl-20 pl-0 lg:pt-0 pt-5">
+                    <div class="relative lg:text-left text-center">
+                        <h2 class="section-heading 2xl:!text-Mfont lg:!text-4xl relative z-10">Volg jij ons al?</h2>
+                        <p class="lg:pt-6 pt-4 lg:pb-4 pb-3 text-primary3 relative z-10">Curabitur malesuada ullamcorper <br> augue, nec rhoncus elit elementum </p>
+                        <div class="absolute lg:right-0 right-7 lg:top-0 -top-5">
+                            <img src="../src/img/card.svg" class="2xl:w-auto lg:w-32 w-20" alt="">
+                        </div>   
+                    </div>
+                    <div class="flex lg:justify-start justify-center lg:mt-7 mt-4">
+                        <a href="/" class="2xl:mr-11 lg:mr-8 mr-5">
+                            <img src="../src/img/instagram.svg" class="2xl:w-auto w-10" alt="">
+                        </a>
+                        <a href="/" class="2xl:mr-11 lg:mr-8 mr-5">
+                            <img src="../src/img/pinterest.svg" class="2xl:w-auto w-10" alt="">
+                        </a>
+                        <a href="/" class="2xl:mr-11 lg:mr-8 mr-5">
+                            <img src="../src/img/facebook.svg" class="2xl:w-auto w-5" alt="">
+                        </a>
+                        <a href="/" class="2xl:mr-11 lg:mr-8 mr-5">
+                            <img src="../src/img/linkedin.svg" class="2xl:w-auto w-10" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RATINGS -->
+
+    <section class="bg-grey lg:py-16 md:py-12 py-8 lg:-mt-56 mt-5">
+        <div class="container">
+            <div class="flex lg:flex-nowrap flex-wrap justify-between">
+                <div class="lg:mb-0 mb-3">
+                    <span class="2xl:text-2xl md:text-xl text-base font-bold text-white">Wenskaarten van topkwaliteit</span>
+                    <p class="text-white">lorem</p>
+                </div>
+                <div class="lg:mb-0 mb-3">
+                    <div class="flex items-center">
+                        <div class="mr-1.5">
+                            <img src="../src/img/star.svg" class="xl:w-auto w-6" alt="">
+                        </div>
+                        <div class="mr-1.5">
+                            <img src="../src/img/star.svg" class="xl:w-auto w-6" alt="">
+                        </div>
+                        <div class="mr-1.5">
+                            <img src="../src/img/star.svg" class="xl:w-auto w-6" alt="">
+                        </div>
+                        <div>
+                            <img src="../src/img/star.svg" class="xl:w-auto w-6" alt="">
+                        </div>
+                        <span class="text-white font-bold pl-3">4.7 / 5</span>
+                    </div>
+                    <button class="2xl:text-2xl lg:text-xl text-lg text-white font-medium lg:mt-3 mt-1">Toon alle reviews</button>
+                </div>
+                <div class="flex items-center">
+                    <div class="xl:h-20 xl:w-20 h-16 w-16 bg-white rounded-full flex items-center justify-center">
+                        <img src="../src/img/truck.svg" class="xl:w-auto w-10" alt="">
+                    </div>
+                    <div class="lg:pl-7 md:pl-5 pl-4">
+                        <span class="2xl:text-2xl md:text-xl text-base font-bold text-white block">Wenskaarten van topkwaliteit</span>
+                        <p class="text-white">lorem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="lg:pt-28 md:pt-24 pt-20 md:bg-cover bg-Full bg-bottom bg-no-repeat lg:pb-60 bg-footer">
+        <div class="container">
+            <div>
+                <a href="">
+                    <img src="../src/img/logo.svg" class="mx-auto xl:w-auto w-48" alt="">
+                </a>
+            </div>
+            <div class="flex lg:text-left text-center lg:flex-nowrap flex-wrap lg:w-4/5 w-full lg:pt-10 pt-6 mx-auto">
+                <div class="lg:w-1/3 md:w-2/4 w-full">
+                    <h4 class="text-black 2xl:text-Mfont lg:text-3xl text-2xl lg:pb-5 pb-4">Best Recards</h4>
+                    <ul>
+                        <li><a href="">Word dealer</a></li>
+                        <li><a href="">Over ons</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/3 md:w-2/4 w-full">
+                    <h4 class="text-black 2xl:text-Mfont lg:text-3xl text-2xl lg:pb-5 pb-4">Klantenservice </h4>
+                    <ul>
+                        <li><a href="">Betalen</a></li>
+                        <li><a href="">Verzenden & Bezorgen</a></li>
+                        <li><a href="">Retourneren</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/3 md:w-2/4 w-full">
+                    <h4 class="text-black 2xl:text-Mfont lg:text-3xl text-2xl lg:pb-5 pb-4">Assortiment</h4>
+                    <ul>
+                        <li><a href="">Wenskaarten</a></li>
+                        <li><a href="">Voordeel mixboxen</a></li>
+                        <li><a href="">Molens</a></li>
+                        <li><a href="">Accessoires</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COPYRIGHT -->
+
+    <div class="bg-secondary lg:py-10 md:py-8 py-6">
+        <div class="container text-center">
+            <p>© 2023 BestRecards.nl - Hanzepoort 25F, 7575 DB Oldenzaal   |   <u>info@bestrecards.nl</u>   |   <u>085 – 0049201</u></p>
+            <p><a href="" class="border-b border-dark inline-block mr-2">Algemene voorwaarden</a>   |   <a href="" class="border-b ml-2 border-dark inline-block">Privacy & Cookies</a></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- JS -->
+    <script src="../src/js/main.js"></script>
+
+
+  
+
+
+</body>
+</html>
